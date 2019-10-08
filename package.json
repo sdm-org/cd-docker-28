@@ -7,7 +7,7 @@
     "url": "https://github.com/sdm-org/cd-docker-28.git"
   },
   "author": {
-    "name": "Christian Dupuis"
+    "name": "Christian Dupuis" 
   },
   "license": "MIT",
   "scripts": {
