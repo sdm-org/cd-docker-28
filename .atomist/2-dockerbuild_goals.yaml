@@ -16,4 +16,3 @@ docker_build:
       - --single-snapshot
     input: 
     - node-modules
-
