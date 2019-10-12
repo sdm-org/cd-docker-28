@@ -1,0 +1,16 @@
+docker_build:
+  test: 
+  - hasFile: Dockerfile
+
+  dependsOn: node_build
+  
+  goals:
+  - containers: 
+    - name: kaniko
+      image: gcr.io/kaniko-project/executor
+      args:
+      - --context=dir://atm/home,
+      - --destination=${ATOMIST_OWNER}/${ATOMIST_REPO}:${ATOMIST_SHA}
+      - --dockerfile=Dockerfile
+      - --no-push
+      - --single-snapshot
