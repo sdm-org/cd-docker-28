@@ -8,7 +8,7 @@ node_build:
   - containers:
     - name: npm-test 
       image: node:8-slim
-      env:
+      env: 
       - name: NODE_ENV
         value: development
       - name: MONGODB_URI
