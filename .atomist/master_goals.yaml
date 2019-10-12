@@ -9,7 +9,7 @@ node_build:
     - name: npm-test   
       image: node:8-slim
       env: 
-      - name: NODE_ENV
+      - name: NODE_ENV 
         value: development
       - name: MONGODB_URI
         value: mongodb://mongo:27017/test
