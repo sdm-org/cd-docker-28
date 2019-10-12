@@ -5,7 +5,7 @@ node_build:
     - isDefaultBranch
    
   goals:   
-  - containers: 
+  - containers:  
     - name: npm-test   
       image: node:8-slim 
       env: 
