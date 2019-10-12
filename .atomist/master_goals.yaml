@@ -6,7 +6,7 @@ node_build:
  
   goals: 
   - containers:
-    - name: npm-test  
+    - name: npm-test   
       image: node:8-slim
       env: 
       - name: NODE_ENV
