@@ -1,4 +1,4 @@
-node_build:
+node_build: 
   test:
   - and:
     - hasFile: package.json
