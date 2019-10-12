@@ -1,5 +1,5 @@
 node_build: 
-  test:
+  test: 
   - and:
     - hasFile: package.json
     - isDefaultBranch
