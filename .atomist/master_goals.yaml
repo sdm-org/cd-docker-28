@@ -4,7 +4,7 @@ node_build:
     - hasFile: package.json
     - isDefaultBranch
  
-  goals:
+  goals: 
   - containers:
     - name: npm-test  
       image: node:8-slim
