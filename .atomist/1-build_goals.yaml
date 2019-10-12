@@ -25,3 +25,23 @@ node_build:
     - classifier: node-modules
       pattern:
         directory: node_modules
+  - containers:  
+    - name: npm-test2   
+      image: node:8-slim 
+      env: 
+      - name: NODE_ENV 
+        value: development
+      - name: MONGODB_URI
+        value: mongodb://mongo:27017/test
+      args:
+      - sh
+      - -c
+      - npm ci && npm test
+      docker_options:
+        - '--link=mongo:mongo'
+    - name: mongo
+      image: mongo:latest
+    output:
+    - classifier: node-modules
+      pattern:
+        directory: node_modules
