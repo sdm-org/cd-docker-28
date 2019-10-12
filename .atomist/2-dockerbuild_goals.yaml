@@ -9,7 +9,7 @@ docker_build:
     - name: kaniko
       image: gcr.io/kaniko-project/executor
       args:
-      - --context=///atm/home
+      - --context=dir:///atm/home
       - --destination=${ATOMIST_OWNER}/${ATOMIST_REPO}:${ATOMIST_SHA}
       - --dockerfile=Dockerfile
       - --no-push
