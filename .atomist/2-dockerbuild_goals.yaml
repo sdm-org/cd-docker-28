@@ -2,7 +2,7 @@ docker_build:
   test: 
   - hasFile: Dockerfile
   
-  dependsOn: node_build
+  depends_on: node_build
        
   goals:  
   - containers:   
