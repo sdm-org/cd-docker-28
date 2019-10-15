@@ -4,7 +4,7 @@ docker_build:
    
   depends_on: node_build
          
-  goals:  
+  goals:   
   - containers:   
     - name: kaniko
       image: gcr.io/kaniko-project/executor
