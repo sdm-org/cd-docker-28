@@ -3,7 +3,7 @@ docker_build:
   - hasFile: Dockerfile 
    
   depends_on: node_build
-       
+        
   goals:  
   - containers:   
     - name: kaniko
