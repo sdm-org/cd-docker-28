@@ -1,6 +1,6 @@
 docker_build: 
   test: 
-  - hasFile: Dockerfile
+  - hasFile: Dockerfile 
   
   depends_on: node_build
        
